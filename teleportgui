@@ -1,0 +1,125 @@
+local ScreenGui = Instance.new("ScreenGui")
+local justsomething = Instance.new("Frame")
+local themainthing = Instance.new("Frame")
+local tel = Instance.new("TextLabel")
+local xr = Instance.new("TextButton")
+local dr = Instance.new("TextButton")
+local gsr = Instance.new("TextButton")
+local paid = Instance.new("TextLabel")
+local trol = Instance.new("ImageLabel")
+local nerd = Instance.new("ImageLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+justsomething.Name = "justsomething"
+justsomething.Parent = ScreenGui
+justsomething.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+justsomething.BorderSizePixel = 0
+justsomething.Active = true
+justsomething.Draggable = true
+function onKeyPress(inputObject, gameProcessedEvent)
+	if inputObject.KeyCode == Enum.KeyCode.RightControl then
+		if justsomething.Visible == false then
+			justsomething.Visible = true
+		else
+			justsomething.Visible = false
+		end
+	end
+end
+
+game:GetService("UserInputService").InputBegan:connect(onKeyPress)
+justsomething.Position = UDim2.new(0, 0, 0.00555555569, 0)
+justsomething.Size = UDim2.new(0, 100, 0, 192)
+
+themainthing.Name = "themainthing"
+themainthing.Parent = justsomething
+themainthing.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+themainthing.BorderColor3 = Color3.fromRGB(27, 27, 27)
+themainthing.Position = UDim2.new(0, 0, -0.000284115464, 0)
+themainthing.Size = UDim2.new(0, 140, 0, 240)
+
+tel.Name = "tel"
+tel.Parent = themainthing
+tel.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+tel.BorderColor3 = Color3.fromRGB(27, 27, 27)
+tel.BorderSizePixel = 0
+tel.Size = UDim2.new(0, 140, 0, 32)
+tel.Font = Enum.Font.SourceSans
+tel.Text = "Teleports"
+tel.TextColor3 = Color3.fromRGB(232, 232, 232)
+tel.TextSize = 14.000
+
+xr.Name = "xr"
+xr.Parent = themainthing
+xr.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+xr.BorderColor3 = Color3.fromRGB(27, 27, 27)
+xr.BorderSizePixel = 0
+xr.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/zyZ0eDUV'),true))()
+end)
+xr.Position = UDim2.new(0, 0, 0.119402982, 0)
+xr.Size = UDim2.new(0, 140, 0, 29)
+xr.Font = Enum.Font.SourceSans
+xr.Text = "X Room."
+xr.TextColor3 = Color3.fromRGB(232, 232, 232)
+xr.TextSize = 14.000
+
+dr.Name = "dr"
+dr.Parent = themainthing
+dr.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+dr.BorderColor3 = Color3.fromRGB(27, 27, 27)
+dr.BorderSizePixel = 0
+dr.Position = UDim2.new(-0.00714285718, 0, 0.227611929, 0)
+dr.Size = UDim2.new(0, 140, 0, 29)
+dr.Font = Enum.Font.SourceSans
+dr.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/Vvwc0xJK'),true))()
+end)
+dr.Text = "Donate Room."
+dr.TextColor3 = Color3.fromRGB(232, 232, 232)
+dr.TextSize = 14.000
+
+gsr.Name = "gsr"
+gsr.Parent = themainthing
+gsr.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+gsr.BorderColor3 = Color3.fromRGB(27, 27, 27)
+gsr.BorderSizePixel = 0
+gsr.Position = UDim2.new(-0.00714285718, 0, 0.335820884, 0)
+gsr.Size = UDim2.new(0, 140, 0, 29)
+gsr.Font = Enum.Font.SourceSans
+gsr.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/YixrcSVj'),true))()
+end)
+gsr.Text = "Glitchtale Sans Room."
+gsr.TextColor3 = Color3.fromRGB(232, 232, 232)
+gsr.TextSize = 14.000
+
+paid.Name = "paid"
+paid.Parent = themainthing
+paid.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+paid.BorderSizePixel = 0
+paid.Position = UDim2.new(0, 0, 0.454166681, 0)
+paid.Size = UDim2.new(0, 140, 0, 131)
+paid.Font = Enum.Font.SourceSans
+paid.Text = "these are all paid teleports"
+paid.TextColor3 = Color3.fromRGB(232, 232, 232)
+paid.TextSize = 14.000
+
+trol.Name = "trol"
+trol.Parent = themainthing
+trol.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+trol.BorderSizePixel = 0
+trol.Position = UDim2.new(0, 0, 0.456654221, 0)
+trol.Size = UDim2.new(0, 140, 0, 56)
+trol.Image = "http://www.roblox.com/asset/?id=2597283815"
+
+nerd.Name = "nerd"
+nerd.Parent = themainthing
+nerd.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+nerd.BorderSizePixel = 0
+nerd.Position = UDim2.new(0, 0, 0.758333325, 0)
+nerd.Size = UDim2.new(0, 140, 0, 58)
+nerd.Image = "http://www.roblox.com/asset/?id=7510507497"
