@@ -18,8 +18,9 @@ justsomething.Name = "justsomething"
 justsomething.Parent = ScreenGui
 justsomething.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 justsomething.BorderSizePixel = 0
+justsomething.BackgroundTransparency = 1.000
 justsomething.Active = true
-justsomething.Draggable = true
+justsomething.Draggable = false
 function onKeyPress(inputObject, gameProcessedEvent)
 	if inputObject.KeyCode == Enum.KeyCode.RightControl then
 		if justsomething.Visible == false then
@@ -31,10 +32,12 @@ function onKeyPress(inputObject, gameProcessedEvent)
 end
 
 game:GetService("UserInputService").InputBegan:connect(onKeyPress)
-justsomething.Position = UDim2.new(0, 0, 0.00555555569, 0)
+justsomething.Position = UDim2.new(0.353125036, 0, 0.188888878, 0)
 justsomething.Size = UDim2.new(0, 100, 0, 192)
 
 themainthing.Name = "themainthing"
+themainthing.Active = true
+themainthing.Draggable = true
 themainthing.Parent = justsomething
 themainthing.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 themainthing.BorderColor3 = Color3.fromRGB(27, 27, 27)
